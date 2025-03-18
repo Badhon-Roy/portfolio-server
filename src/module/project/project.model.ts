@@ -25,7 +25,9 @@ const ProjectSchema = new Schema<IProject>({
     keyFeatures: { type: [String], required: true },
     challengesFaced: { type: [String], required: true },
     futureImprovements: { type: [String], required: true },
-});
+},
+    { timestamps: true }
+);
 
 const ProjectModel = mongoose.model<IProject>("Project", ProjectSchema);
 export default ProjectModel;

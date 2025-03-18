@@ -17,5 +17,5 @@ export interface IProject {
     keyFeatures: string[];
     challengesFaced: string[];
     futureImprovements: string[];
-  }
+}
   
