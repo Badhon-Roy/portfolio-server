@@ -11,20 +11,16 @@ const ProjectSchema = new Schema<IProject>({
         database: { type: String, required: true },
         authentication: { type: String, required: true },
     },
-    teamMembers: { type: String, required: true },
     projectType: {
         type: String,
         enum: ["personal", "team"],
         required: true,
         lowercase: true,
     },
-    role: { type: String, required: true },
     liveSite: { type: String, required: true },
     clientSiteGitHub: { type: String, required: true },
     serverSiteGitHub: { type: String, required: true },
     keyFeatures: { type: [String], required: true },
-    challengesFaced: { type: [String], required: true },
-    futureImprovements: { type: [String], required: true },
 },
     { timestamps: true }
 );

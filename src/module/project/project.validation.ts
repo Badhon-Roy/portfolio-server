@@ -11,15 +11,11 @@ const createProjectValidationSchema = z.object({
             database: z.string().min(1),
             authentication: z.string().min(1),
         }),
-        teamMembers: z.string().default('1'),
         projectType: z.enum(["personal", "team"]),
-        role: z.string().min(1),
         liveSite: z.string().url(),
         clientSiteGitHub: z.string().url(),
         serverSiteGitHub: z.string().url(),
         keyFeatures: z.array(z.string()).min(1),
-        challengesFaced: z.array(z.string()).min(1),
-        futureImprovements: z.array(z.string()).min(1),
     })
 });
 export const projectValidation = {
