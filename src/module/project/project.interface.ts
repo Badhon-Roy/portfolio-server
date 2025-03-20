@@ -8,14 +8,10 @@ export interface IProject {
       database: string;
       authentication: string;
     };
-    teamMembers: string;
     projectType: "personal" | 'team';
-    role: string;
     liveSite: string;
     clientSiteGitHub: string;
     serverSiteGitHub: string;
     keyFeatures: string[];
-    challengesFaced: string[];
-    futureImprovements: string[];
 }
   
